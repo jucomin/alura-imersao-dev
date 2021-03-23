@@ -3,7 +3,9 @@ function convertCurrency() {
 
   const crown = parseFloat(prompt('Swedish crown'))
   const brazilianReal = crown * RATE
-  alert(brazilianReal)
+  const brazilianRealFixed = brazilianReal.toFixed(2)
+
+  alert(brazilianRealFixed)
 }
 
 convertCurrency()
